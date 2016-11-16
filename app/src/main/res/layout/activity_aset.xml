@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/m_aset_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/m_aset_repeat"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4.2"
+            android:gravity="center_vertical|left"
+            android:text="重复"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/m_aset_repeat_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:text="只响一次"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="25dip"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="4.8"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_right" />
+
+    </LinearLayout>
+
+    <include layout="@layout/horizontalview" />
+
+    <LinearLayout
+        android:id="@+id/m_aset_bell"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4.2"
+            android:gravity="center_vertical|left"
+            android:text="重复"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/m_aset_bell_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:text="只响一次"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="25dip"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="4.8"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_right" />
+
+    </LinearLayout>
+
+    <include layout="@layout/horizontalview" />
+
+    <LinearLayout
+        android:id="@+id/m_aset_mark"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4.2"
+            android:gravity="center_vertical|left"
+            android:text="重复"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/m_aset_mark_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:text="只响一次"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="25dip"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="4.8"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_right" />
+
+    </LinearLayout>
+
+    <include layout="@layout/horizontalview" />
+
+    <LinearLayout
+        android:id="@+id/m_aset_shake"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center_vertical|left"
+            android:text="重复"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <ToggleButton
+            android:id="@+id/m_aset_shake_togglebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:background="@drawable/togglebutton"
+            android:textOff=""
+            android:textOn="" />
+
+    </LinearLayout>
+
+    <include layout="@layout/horizontalview" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="多久之后响铃" />
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner" />
+
+</LinearLayout>
